@@ -1,0 +1,706 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg3.jpeg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.cta-button:hover {
+    background-color: #ff4a3d;
+}
+
+/* Packages Section */
+.packages {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.packages h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.package-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.package {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.package:hover {
+    transform: scale(1.05);
+    /* Scale up the package */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    /* Add shadow */
+    background-color: #fff;
+    /* Change background color */
+}
+
+.package h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.package .price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff6f61;
+    margin-bottom: 15px;
+}
+
+.package p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Call-to-Action Section */
+.cta {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Login Section */
+.login-section {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.login-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.login-section form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+.login-section .cta-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-section .cta-button:hover {
+    background-color: #ff4a3d;
+}
+
+.login-section p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.login-section a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.login-section a:hover {
+    text-decoration: underline;
+}
+
+/* Register Section */
+.register-section {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.register-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.register-section form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+.register-section .cta-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-section .cta-button:hover {
+    background-color: #ff4a3d;
+}
+
+.register-section p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.register-section a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.register-section a:hover {
+    text-decoration: underline;
+}
+
+/* Catalogue Section */
+.catalogue-section {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.catalogue-section h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.product h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.product .price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff6f61;
+    margin-bottom: 15px;
+}
+
+.product p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.product .cta-button {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.product .cta-button:hover {
+    background-color: #ff4a3d;
+}
+
+/* Catalogue Section */
+.catalogue-section {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.catalogue-section h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.product h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.product .price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff6f61;
+    margin-bottom: 15px;
+}
+
+.product p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.product .cta-button {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.product .cta-button:hover {
+    background-color: #ff4a3d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Cart Section */
+.cart-section {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.cart-section h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cart-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item h3 {
+    font-size: 20px;
+    margin: 0;
+    flex: 1 1 100%;
+}
+
+.cart-item p {
+    font-size: 16px;
+    margin: 0;
+    flex: 1 1 100%;
+}
+
+.quantity-form {
+    display: inline-block;
+}
+
+.quantity-button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.quantity-button:hover {
+    background-color: #ff4a3d;
+}
+
+.quantity {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.remove-form {
+    display: inline-block;
+}
+
+.remove-button {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.remove-button:hover {
+    background-color: #bbb;
+}
+
+.subtotal {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.cart-total {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.cart-total h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cart-total .cta-button {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cart-total .cta-button:hover {
+    background-color: #ff4a3d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .subtotal {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/* Cart Actions */
+.cart-actions {
+    display: flex;
+    gap: 10px;
+    /* Adds space between the buttons */
+    margin-top: 20px;
+}
+
+/* Empty Cart Button */
+.empty-cart-form {
+    flex: 1;
+    /* Allows the button to take up available space */
+}
+
+.empty-cart-button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    /* Makes the button full width within its container */
+}
+
+.empty-cart-button:hover {
+    background-color: #cc0000;
+}
+
+/* Proceed to Checkout Button */
+.cart-actions .cta-button {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    flex: 1;
+    /* Allows the button to take up available space */
+}
+
+.cart-actions .cta-button:hover {
+    background-color: #ff4a3d;
+}
+
+/* Checkout Section */
+.checkout-section {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.checkout-section h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.order-summary {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.order-item {
+    margin-bottom: 20px;
+}
+
+.order-item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.order-item p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.order-total {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.payment-form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.payment-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+.cta-button {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta-button:hover {
+    background-color: #ff4a3d;
+}
